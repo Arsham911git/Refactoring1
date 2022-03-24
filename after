@@ -1,0 +1,9 @@
+def input_positive_integer(prompt):
+  while True:
+    input_value = int(input(prompt))
+    if input_value > 0:
+      return input_value
+
+length = input_positive_integer("Enter the length: ")
+width = input_positive_integer("Enter the width: ")
+print("The area is", length * width)
